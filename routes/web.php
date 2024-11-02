@@ -13,3 +13,6 @@ Route::get('/about', function () {
 route::get('/home', function () {
     return view("home");
 });
+route::get('/posts', function () {
+    return view("posts");
+});

@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2 class="fon">About Me</h2>
-    <p>{{ $name }}</p>
-    <img src="./img/{{ $img }}" alt="{{ $name }}" width="150">
-    <p>{{ $email }}</p>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    
+    <!-- Content -->
+    <div class="container">
+        <h1>About Us</h1>
+        <p>This is the about page where we describe our website. Our website offers a variety of blog posts on different topics.</p>
+    </div>
 </body>
 </html>
