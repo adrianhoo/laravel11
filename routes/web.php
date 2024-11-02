@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/about', function () {
     return view('about', [
-        "name" => "Adrian",
+        "name" => "Adrian Howandy",
         "img" => "adrian.jpg",
         "email" => "andrianhowandi@gmail.com",
     ]);

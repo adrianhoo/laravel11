@@ -15,9 +15,11 @@
     </nav>
     
     <!-- Content -->
-    <div class="container">
-        <h1>About Us</h1>
-        <p>This is the about page where we describe our website. Our website offers a variety of blog posts on different topics.</p>
+    <div class="container ">
+        <h1 class="text-3xl">About Me</h1>
+        <p>{{ $name }}</p>
+        <p>{{ $email }}</p>
+        <img src="img/{{ $img }}" alt="" width=150px>
     </div>
 </body>
 </html>
