@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
+    @vite('resources/css/app.css')
 </head>
 <body>
     <!-- Navbar -->
@@ -16,7 +17,7 @@
     
     <!-- Content -->
     <div class="container ">
-        <h1 class="text-3xl">About Me</h1>
+        <h1 class="">About Me</h1>
         <p>{{ $name }}</p>
         <p>{{ $email }}</p>
         <img src="img/{{ $img }}" alt="" width=150px>
