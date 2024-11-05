@@ -6,7 +6,7 @@ Route::get(
     '/',
     function () {
         return view("home", [
-            "nama" => "Adrian Howandy"
+            "title" => "Home Page"
         ]);
     }
 );
@@ -14,7 +14,8 @@ Route::get(
     '/about',
     function () {
         return view("about", [
-            "nama" => "Adrian Howandy"
+            "name" => "Adrian Howandy",
+            "title" => "About Page"
         ]);
     }
 );
@@ -22,7 +23,7 @@ Route::get(
     '/blog',
     function () {
         return view("blog", [
-            "nama" => "Adrian Howandy"
+            "title" => "Blog Page"
         ]);
     }
 );
@@ -30,7 +31,7 @@ Route::get(
     '/contact',
     function () {
         return view("contact", [
-            "nama" => "Adrian Howandy"
+            "title" => "Contact Page"
         ]);
     }
 );
