@@ -32,9 +32,11 @@ Route::get(
     }
 );
 Route::get('/posts/{slug}', function ($slug) {
-    $post = Arr::first(post::all(), function ($post) use ($slug) {
-        return $post['slug'] == $slug;
-    });
+
+
+    $post = Post::find($slug);
+
+
     return view(
         'post',
         [
