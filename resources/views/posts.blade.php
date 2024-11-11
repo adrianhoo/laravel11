@@ -7,7 +7,7 @@
                 <h2 class="font-bold text-4xl my-2 p-2">{{ $post['title'] }}</h2>
             </a>
             <div class="p-2 text-2xl font-semibold ">
-                <a href="#">{{ $post['author'] }} || 06/11/2024</a>
+                <a href="#">{{ $post['author'] }} || {{ $post -> created_at->diffForHumans()  }}</a>
             </div>
             <p class="p-2 text-lg leading-relaxed font-light"> {{ Str::limit($post['body'], 100) }} </p>
             <a href="/posts/{{ $post['slug'] }}" class="p-2 text-lg text-sky-500 hover:underline">Read more &raquo;</a>
